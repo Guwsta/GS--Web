@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -6,15 +6,19 @@
     box-sizing: border-box;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: "Roboto Mono", monospace;
 }
 
-a{
+a {
     color: #000;
 }
 
-.nav{
+.nav {
     height: 80px;
     padding-inline: 30px;
     display: flex;
@@ -22,12 +26,12 @@ a{
     align-items: center;
 }
 
-.nav li{
+.nav li {
     display: flex;
     gap: 40px;
 }
 
-.hero{
+.hero {
     height: 100dvh;
     padding: 20px;
     display: flex;
@@ -36,49 +40,86 @@ a{
     background-color: blanchedalmond;
 }
 
-.hero-content{
+.hero-content {
     width: 60%;
     height: 80%;
     border: #000 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
-.cta{
+.cta {
     display: flex;
-    justify-content: space-evenly;
+
     gap: 50px;
     margin-top: 30px;
 }
 
-.cta1{
+.cta1 {
     padding: 15px 50px;
     background-color: rgb(208, 135, 222);
 }
-.cta2{
+
+.cta2 {
     padding: 15px 50px;
     background-color: rgb(177, 109, 21);
 }
 
 
-.hero-img{
+.hero-img {
     width: 30%;
     display: flex;
     align-items: center;
     background-color: chocolate;
 }
 
-.hero-img img{
+.hero-img img {
     width: 100%;
 }
 
-.container{
+.container {
     height: 100dvh;
     display: flex;
 }
 
-.container-tecnology-content{
+.format-problem {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.format-problem img {
+    height: 70%;
+}
+
+.problem-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    width: 50%;
+}
+
+.problem-content h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.card-problem {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.item-problem {
+    width: 40%;
+}
+
+.format-tecnology {
     width: 90%;
     border: #000 1px solid;
     display: flex;
@@ -87,7 +128,7 @@ a{
     margin: 50px auto;
 }
 
-.container-tecnology{
+.card-tecnology {
     padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
@@ -95,10 +136,27 @@ a{
     gap: 50px;
 }
 
-.tecnology-card{
+.item-tecnology {
     width: 40%;
     border: #ccc 1px solid;
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.format-objective{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.format-objective h2{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-objective{
+    display: flex;
 }
